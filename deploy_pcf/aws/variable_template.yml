@@ -24,7 +24,6 @@ public_subnet_id: PcfPublicSubnetId
 public_subnet_availability_zone: PcfPublicSubnetAvailabilityZone
 private_subnet_id: PcfPrivateSubnetId
 private_subnet_availability_zone: PcfPrivateSubnetAvailabilityZone
-private_subnet2_id: PcfPrivateSubnet2Id
 rds_address: PcfRdsAddress
 rds_port: PcfRdsPort
 rds_username: PcfRdsUsername

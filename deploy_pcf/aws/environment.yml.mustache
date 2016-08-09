@@ -13,7 +13,6 @@ vm_shepherd:
       subnets:
       - {{public_subnet_id}}
       - {{private_subnet_id}}
-      - {{private_subnet2_id}}
       s3_bucket_names: [{{ops_manager_s3_bucket_name}}]
     elbs:
     - name: {{aws_environment_name}}-pcf-elb
