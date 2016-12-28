@@ -242,10 +242,8 @@ if __FILE__ == $PROGRAM_NAME
 end
 
 
-unless Hash.respond_to?(:dig)
-  class Hash
-    def dig(*keys)
-      keys.reduce(self){|val, key| val && val[key]}
-    end
+class Hash
+  def dig(*keys)
+    keys.reduce(self){|val, key| val && val[key]}
   end
 end
