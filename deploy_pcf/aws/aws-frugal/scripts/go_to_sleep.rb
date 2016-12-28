@@ -6,6 +6,12 @@ require 'logger'
 require 'open3'
 require 'httparty'
 
+class Hash
+  def dig(*keys)
+    keys.reduce(self){|val, key| val && val[key]}
+  end
+end
+
 def list_sequence (seq_type, deployment_name, sequence, ec2_client, logger)
   sequence_map ={}
 
@@ -242,8 +248,3 @@ if __FILE__ == $PROGRAM_NAME
 end
 
 
-class Hash
-  def dig(*keys)
-    keys.reduce(self){|val, key| val && val[key]}
-  end
-end
